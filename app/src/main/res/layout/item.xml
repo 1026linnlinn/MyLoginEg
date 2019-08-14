@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    app:ignore="NamespaceTypo">
+
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:maxHeight="48dp"
+        android:tag="image_tag" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_toRightOf="@id/profile"
+        android:gravity="bottom"
+        android:text=" Doctor Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/tvName"
+        android:layout_toRightOf="@id/profile"
+        android:gravity="bottom"
+        android:text=" Heart,OG "
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvType"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/profile"
+        android:text=" Pyinn Oo Lwin, Yangon"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/btn_doctor_detail"
+        android:layout_width="24dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="16dp"
+        android:background="#ffff"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_right_arrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#bebebe" />
+
+</RelativeLayout>
